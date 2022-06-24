@@ -1,0 +1,56 @@
+version: 2
+
+seeds:
+  - name: doctors
+    config:
+      column_types:
+        npi: varchar(32) 
+        name_f: varchar(32)
+        name_l: varchar(32)
+        name: varchar(32)
+        bill_to: varchar(32)
+        zip: varchar(32)
+        state: varchar(32)
+        country: varchar(32)
+        created: varchar(32)
+        last_login: varchar(32)
+        _fivetran_synced_at: varchar(32)
+        id: varchar(32)
+        prac_id: varchar(32)
+  - name: doc_specialties
+    config:
+      column_types:
+        doc_id: varchar(32)
+        id: varchar(32)
+        created: varchar(32)
+        _fivetran_synced_at: varchar(32)
+  - name: claims
+    config:
+      column_types:
+        pat_id: varchar(32)
+        doc_id: varchar(32)
+        prac_id: varchar(32)
+        car_id: varchar(32)
+        npi: varchar(32)
+        test: bool
+        ClaimNumber: varchar(32) 
+        created: varchar(32)
+        bill_attmps: int
+        firstbill: varchar(32)
+        _fivetran_synced_at: varchar(32)
+  - name: patients
+    config:
+      column_types:
+        id: varchar(32)
+        prac_id: varchar(32)
+        bill_to: varchar(32)
+        zip: varchar(32)
+        state: varchar(32)
+        country: varchar(32)
+        created: varchar(32)
+        last_login: varchar(32)
+        _fivetran_synced_at: varchar(32)
+        dob: varchar(32)
+        diabetes: bool
+        email: varchar(32)
+  

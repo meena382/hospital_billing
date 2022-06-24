@@ -1,0 +1,18 @@
+#version: 2
+
+#sources:
+  #- name: billing_data
+  #  database: hospital_billing
+  #  schema: public_billing_data
+  #  tables: 
+  #    - name: claims
+  #    - name: claim_line
+  #    - name: claim_diagnosis
+
+  #- name: ehr_data
+  #  database: hospital_billing
+  #  schema: public_ehr_data
+  #  tables:        
+  #    - name: doc_specialties
+  #    - name: patients
+  #    - name: doctors

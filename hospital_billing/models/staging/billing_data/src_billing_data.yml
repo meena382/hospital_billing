@@ -1,0 +1,11 @@
+
+version: 2
+
+sources:
+  - name: billing_data
+    schema: public_billing_data
+    database: hospital_billing
+    tables: 
+      - name: claims
+      - name: claim_line
+      - name: claim_diagnosis
